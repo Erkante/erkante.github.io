@@ -95,7 +95,7 @@
 <p class="updated">Son güncelleme: [GÜNCELLEME_TARİHİ] · Yürürlük tarihi: [YÜRÜRLÜK_TARİHİ]</p>
 
 <div class="notice">
-Bu politika, KPSS Uygulaması'nı ("Uygulama") kullandığınızda hangi kişisel verilerinizin işlendiğini, bu verilerin nasıl kullanıldığını ve haklarınızı açıklar. Uygulamayı kullanarak bu politikanın koşullarını kabul etmiş olursunuz.
+KPSS Uygulaması olarak, kullanıcılarımızın gizliliğine ve kişisel verilerinin korunmasına büyük önem veriyoruz. Bu Gizlilik Politikası, Uygulamayı kullanırken hangi verilerinizin toplandığını, bu verilerin hangi üçüncü taraf servisler aracılığıyla nasıl işlendiğini, korunduğunu ve haklarınızı açıklamaktadır. Uygulamayı indirerek, kayıt olarak ve kullanarak bu politikada belirtilen şartları kabul etmiş sayılırsınız.
 </div>
 
 <h2>1. Veri Sorumlusu</h2>
@@ -111,7 +111,7 @@ Bu politika, KPSS Uygulaması'nı ("Uygulama") kullandığınızda hangi kişise
 <h3>2.1 Hesap Bilgileri</h3>
 <ul>
 <li>E-posta adresi (kayıt ve giriş için)</li>
-<li>Şifre (şifrelenmiş olarak saklanır, geliştirici dahil hiç kimse açık halini göremez)</li>
+<li>Şifre (kriptografik olarak güvenli şekilde saklanır; geliştirici dahil hiç kimse açık halini göremez)</li>
 <li>Ad / kullanıcı adı (isteğe bağlı)</li>
 <li>Cinsiyet seçimi (uygulama içi görsel kişiselleştirme için, isteğe bağlı)</li>
 </ul>
@@ -126,16 +126,20 @@ Bu politika, KPSS Uygulaması'nı ("Uygulama") kullandığınızda hangi kişise
 <li>Uygulama içi tercihler (bildirim ayarları, tema, vb.)</li>
 </ul>
 
-<h3>2.3 Teknik Veriler</h3>
+<h3>2.3 Ödeme ve Abonelik Bilgileri</h3>
+<p>Premium üyelik veya uygulama içi satın alımlarınızdaki işlem geçmişi ve abonelik durumu. <strong>Finansal kart bilgileriniz kesinlikle bizim tarafımızdan tutulmaz</strong>; doğrudan Google Play Billing (veya ileride Apple In-App Purchase) altyapısı tarafından işlenir ve saklanır.</p>
+
+<h3>2.4 Otomatik Toplanan Teknik Veriler</h3>
 <ul>
 <li>Cihaz türü, işletim sistemi sürümü, uygulama sürümü</li>
+<li>Benzersiz cihaz tanımlayıcıları, IP adresi</li>
 <li>Bildirim göndermek için cihaz tanımlayıcı (push token)</li>
 <li>Çökme ve hata raporları (sorun gidermek için)</li>
 <li>Uygulama içi davranış analitiği (hangi ekranlar açılıyor, ne kadar süre kullanılıyor)</li>
 </ul>
 
-<h3>2.4 AI Çağrılarında İletilen Veriler</h3>
-<p>Uygulama içinde AI destekli çözüm asistanı kullandığınızda, sorduğunuz soru ve etkileşim içeriği üçüncü taraf yapay zeka servislerine (Anthropic, OpenAI, Google) gönderilir. Bu içerikler ilgili servislerin kendi politikaları kapsamında işlenir.</p>
+<h3>2.5 AI Çağrılarında İletilen Veriler</h3>
+<p>Uygulama içinde AI destekli çözüm asistanı kullandığınızda, sorduğunuz soru ve etkileşim içeriği üçüncü taraf yapay zeka servislerine (Anthropic, OpenAI, Google) gönderilir. <strong>Bu süreçte adınız, e-postanız, şifreniz veya diğer kimlik bilgileriniz yapay zeka servis sağlayıcıları ile paylaşılmaz</strong> — yalnızca soru içeriği iletilir.</p>
 
 <h2>3. Verileri Nasıl Kullanıyoruz</h2>
 <ul>
@@ -147,25 +151,33 @@ Bu politika, KPSS Uygulaması'nı ("Uygulama") kullandığınızda hangi kişise
 </ul>
 <p>Kişisel verileriniz <strong>satılmaz, pazarlanmaz veya üçüncü taraflarla ticari amaçla paylaşılmaz.</strong></p>
 
-<h2>4. Üçüncü Taraf Servisler</h2>
+<h2>4. Cihaz İzinleri</h2>
+<p>Uygulamanın çalışabilmesi için cihazınızdan aşağıdaki izinler talep edilebilir:</p>
+<ul>
+<li><strong>İnternet erişimi:</strong> Supabase veritabanı, yapay zeka modülleri ve içeriklerin sunucudan çekilmesi için zorunludur.</li>
+<li><strong>Bildirim izni:</strong> Firebase Cloud Messaging üzerinden önemli KPSS duyurularını ve çalışma hatırlatıcılarını alabilmeniz için kullanılır. Bu izin opsiyoneldir; reddetseniz de uygulama çalışmaya devam eder, yalnızca bildirim alamazsınız.</li>
+</ul>
+
+<h2>5. Üçüncü Taraf Servisler</h2>
 <p>Uygulamanın çalışması için aşağıdaki servisleri kullanırız. Her birinin kendi gizlilik politikası vardır:</p>
 
-<h3>4.1 Veri Barındırma ve Kimlik Doğrulama</h3>
+<h3>5.1 Veri Barındırma ve Kimlik Doğrulama</h3>
 <ul>
-<li><strong>Supabase</strong> — hesap bilgileri, kullanım verileri ve uygulama içeriği bu altyapıda saklanır. <a href="https://supabase.com/privacy" target="_blank">Gizlilik politikası</a></li>
+<li><strong>Supabase</strong> — hesap bilgileri, kullanım verileri ve uygulama içeriği bu altyapıda saklanır. Güvenli oturum açma (Authentication) işlemleri burada yürütülür. <a href="https://supabase.com/privacy" target="_blank">Gizlilik politikası</a></li>
 </ul>
 
-<h3>4.2 Bildirim Sistemi</h3>
+<h3>5.2 Bildirim Sistemi</h3>
 <ul>
-<li><strong>Firebase Cloud Messaging (Google)</strong> — push bildirimleri için kullanılır. <a href="https://firebase.google.com/support/privacy" target="_blank">Gizlilik politikası</a></li>
+<li><strong>Firebase Cloud Messaging (Google)</strong> — push bildirimleri için kullanılır. Cihazınıza özel anonim bildirim tanımlayıcılarını (token) işler. <a href="https://firebase.google.com/support/privacy" target="_blank">Gizlilik politikası</a></li>
 </ul>
 
-<h3>4.3 Çökme ve Hata İzleme</h3>
+<h3>5.3 Çökme ve Hata İzleme</h3>
 <ul>
-<li><strong>Firebase Crashlytics (Google)</strong> — uygulamada oluşan çökmeleri ve hataları izler. Kişisel olarak tanımlanabilir bilgi içermez. <a href="https://firebase.google.com/support/privacy" target="_blank">Gizlilik politikası</a></li>
+<li><strong>Firebase Crashlytics (Google)</strong> — uygulamada oluşan çökmeleri ve hataları izler. Anonim teknik sistem raporları toplar; kişisel olarak tanımlanabilir bilgi içermez. <a href="https://firebase.google.com/support/privacy" target="_blank">Gizlilik politikası</a></li>
 </ul>
 
-<h3>4.4 Yapay Zeka Servisleri</h3>
+<h3>5.4 Yapay Zeka Servisleri</h3>
+<p>Yapay zeka servisleri, yalnızca AI tabanlı özellikleri kullandığınızda devreye girer. <strong>Bu servislere yalnızca sorduğunuz soru içeriği iletilir; adınız, e-postanız, şifreniz veya hesap tanımlayıcılarınız iletilmez.</strong></p>
 <ul>
 <li><strong>Anthropic (Claude)</strong> — çözüm asistanı ve içerik üretiminde kullanılır. <a href="https://www.anthropic.com/legal/privacy" target="_blank">Gizlilik politikası</a></li>
 <li><strong>OpenAI (GPT)</strong> — içerik doğrulama ve üretiminde kullanılır. <a href="https://openai.com/policies/privacy-policy" target="_blank">Gizlilik politikası</a></li>
@@ -173,24 +185,24 @@ Bu politika, KPSS Uygulaması'nı ("Uygulama") kullandığınızda hangi kişise
 <li><strong>ElevenLabs</strong> — konu anlatımı seslendirmesinde kullanılır. <a href="https://elevenlabs.io/privacy" target="_blank">Gizlilik politikası</a></li>
 </ul>
 
-<h3>4.5 Reklam Servisi</h3>
+<h3>5.5 Reklam Servisi</h3>
 <ul>
-<li><strong>Google AdMob</strong> — ödüllü reklamların gösterimi için kullanılır. AdMob, reklam kişiselleştirmesi için cihaz tanımlayıcısı ve sınırlı kullanım verisi toplayabilir. <a href="https://policies.google.com/technologies/ads" target="_blank">AdMob gizlilik bilgileri</a></li>
+<li><strong>Google AdMob</strong> — ödüllü reklamların gösterimi için kullanılır. AdMob, reklam kişiselleştirmesi için cihaz reklam kimliğini (Advertising ID) ve sınırlı kullanım verisi toplayabilir. <a href="https://policies.google.com/technologies/ads" target="_blank">AdMob gizlilik bilgileri</a></li>
 </ul>
 
-<h3>4.6 Ödeme</h3>
+<h3>5.6 Ödeme</h3>
 <ul>
 <li><strong>Google Play Billing</strong> — premium üyelik ödemeleri Google üzerinden işlenir. Ödeme bilgileriniz (kart bilgisi, banka detayı) bizim tarafımızdan görülmez, saklanmaz. <a href="https://policies.google.com/privacy" target="_blank">Google gizlilik politikası</a></li>
 </ul>
 
-<h2>5. Veri Saklama Süresi</h2>
+<h2>6. Veri Saklama Süresi</h2>
 <ul>
 <li>Hesap aktif olduğu sürece veriler saklanır.</li>
 <li>Hesabınızı sildiğinizde kişisel verileriniz silinir veya anonim hale getirilir.</li>
 <li>Yasal saklama yükümlülüğü gerektiren durumlar (örneğin mali kayıtlar) ilgili mevzuat süresince saklanabilir.</li>
 </ul>
 
-<h2>6. Haklarınız (KVKK Madde 11)</h2>
+<h2>7. Haklarınız (KVKK Madde 11)</h2>
 <p>Veri sahibi olarak aşağıdaki haklara sahipsiniz:</p>
 <ul>
 <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
@@ -203,23 +215,24 @@ Bu politika, KPSS Uygulaması'nı ("Uygulama") kullandığınızda hangi kişise
 <li>İşlenen verilerin münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize çıkan bir sonuca itiraz etme</li>
 <li>Verilerin kanuna aykırı işlenmesi nedeniyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
 </ul>
-<p>Bu haklarınızı kullanmak için <strong>[EMAIL_ADRESI]</strong> adresine e-posta gönderebilir veya Uygulama içinden <strong>Ayarlar → Hesabı Sil</strong> seçeneğini kullanabilirsiniz.</p>
+<p>Bu haklarınızı kullanmak için <strong>[EMAIL_ADRESI]</strong> adresine e-posta gönderebilir veya Uygulama içinden <strong>Ayarlar → Hesabı Sil</strong> seçeneğini kullanabilirsiniz. Başvurunuz, KVKK'nın öngördüğü süreler içinde (en geç 30 gün) sonuçlandırılır.</p>
 
-<h2>7. Veri Güvenliği</h2>
-<p>Verilerinizin korunması için makul teknik ve idari tedbirler alıyoruz: şifreler güvenli yöntemlerle saklanır, veri aktarımı şifreli bağlantılar (HTTPS) üzerinden yapılır, erişim yetkilendirilmiş kişilerle sınırlıdır. Ancak hiçbir internet aktarımı veya elektronik depolama yöntemi %100 güvenli değildir; mutlak güvenlik garanti edilemez.</p>
+<h2>8. Veri Güvenliği</h2>
+<p>Verilerinizin korunması için makul teknik ve idari tedbirler alıyoruz: Toplanan tüm verileriniz Supabase ve Google bulut altyapılarında endüstri standardı şifreleme yöntemleri (SSL/TLS) kullanılarak korunur. Kullanıcı şifreleriniz kriptografik olarak güvenli şekilde saklanır. Veri aktarımı şifreli bağlantılar üzerinden yapılır; erişim yetkilendirilmiş kişilerle sınırlıdır. Ancak hiçbir internet aktarımı veya elektronik depolama yöntemi %100 güvenli değildir; mutlak güvenlik garanti edilemez.</p>
 
-<h2>8. Çocukların Gizliliği</h2>
+<h2>9. Çocukların Gizliliği</h2>
 <p>Bu Uygulama 18 yaş ve üzeri KPSS sınavına hazırlanan adaylar için tasarlanmıştır. Bilerek 18 yaş altı kullanıcılardan veri toplanmaz. 18 yaş altı bir kullanıcı tespit edilirse hesabı kapatılır ve verileri silinir.</p>
 
-<h2>9. Verilerin Uluslararası Aktarımı</h2>
-<p>Kullandığımız bazı servisler (Supabase, Google, Anthropic, OpenAI, ElevenLabs) sunucularını Türkiye dışında tutmaktadır. Bu nedenle verileriniz yurt dışına aktarılabilir. Bu aktarımlar ilgili servislerin uluslararası veri koruma standartlarına uygun şekilde gerçekleştirilir.</p>
+<h2>10. Verilerin Uluslararası Aktarımı</h2>
+<p>Kullandığımız bazı servisler (Supabase, Google, Anthropic, OpenAI, ElevenLabs) sunucularını Türkiye dışında tutmaktadır. Bu nedenle verileriniz yurt dışına aktarılabilir. Bu aktarımlar ilgili servislerin uluslararası veri koruma standartlarına ve KVKK'nın ilgili hükümlerine uygun şekilde gerçekleştirilir.</p>
 
-<h2>10. Politika Değişiklikleri</h2>
-<p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda Uygulama içi bildirim veya e-posta ile haberdar ederiz. Güncellemeler bu sayfada yayınlanır; sayfanın en üstündeki "Son güncelleme" tarihinden takip edebilirsiniz.</p>
+<h2>11. Politika Değişiklikleri</h2>
+<p>Bu politikayı, entegre edilen yeni servisler veya yasal mevzuat değişiklikleri doğrultusunda zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda Uygulama içi bildirim veya e-posta ile haberdar ederiz. Güncellemeler bu sayfada yayınlanır; sayfanın en üstündeki "Son güncelleme" tarihinden takip edebilirsiniz.</p>
 
-<h2>11. İletişim</h2>
+<h2>12. İletişim</h2>
 <div class="contact-box">
 Gizlilik politikamız hakkında sorularınız, talepleriniz veya endişeleriniz için bize ulaşın:<br><br>
+<strong>Geliştirici:</strong> [ADINIZ_SOYADINIZ]<br>
 <strong>E-posta:</strong> [EMAIL_ADRESI]
 </div>
 
