@@ -1,0 +1,238 @@
+ <!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hesap Silme — KPSS Uygulaması</title>
+<style>
+  :root {
+    --bg: #1C1917;
+    --surface: #292524;
+    --text: #EDE0C8;
+    --text-muted: #A8A29E;
+    --accent: #D97706;
+    --border: #44403C;
+    --danger: #DC2626;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    margin: 0 0 8px;
+    color: var(--text);
+    letter-spacing: -0.5px;
+  }
+  .updated {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    color: var(--accent);
+    margin-top: 40px;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+  }
+  h3 {
+    font-size: 17px;
+    color: var(--text);
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  p, li { color: var(--text); font-size: 16px; }
+  p { margin: 12px 0; }
+  ul, ol { padding-left: 24px; }
+  li { margin: 8px 0; }
+  strong { color: var(--accent); font-weight: 600; }
+  a { color: var(--accent); text-decoration: underline; }
+  .notice {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .step {
+    background: var(--surface);
+    padding: 20px 24px;
+    margin: 16px 0;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent);
+  }
+  .step-number {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--bg);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    margin-right: 12px;
+    font-family: Georgia, serif;
+  }
+  .contact-box {
+    background: var(--surface);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 24px;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: var(--surface);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  .table th, .table td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .table th {
+    background: var(--bg);
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .table tr:last-child td { border-bottom: none; }
+  @media (max-width: 480px) {
+    .container { padding: 32px 20px 60px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    .table { font-size: 14px; }
+    .table th, .table td { padding: 10px 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Hesap ve Veri Silme</h1>
+<p class="updated">Son güncelleme: 30.05.2026</p>
+
+<div class="notice">
+Bu sayfa, KPSS Uygulaması ("Uygulama") kullanıcılarının hesaplarını ve ilişkili kişisel verilerini nasıl silebileceklerini açıklar. Uygulamanın geliştiricisi <strong>Erkan Yağmur</strong>'dur.
+</div>
+
+<h2>Uygulama İçinden Silme (Önerilen Yöntem)</h2>
+<p>Hesabınızı en hızlı ve güvenli şekilde Uygulama içinden silebilirsiniz:</p>
+
+<div class="step">
+<span class="step-number">1</span><strong>Uygulamayı açın</strong> ve hesabınızla giriş yapın.
+</div>
+
+<div class="step">
+<span class="step-number">2</span><strong>Profil / Ayarlar</strong> ekranına gidin.
+</div>
+
+<div class="step">
+<span class="step-number">3</span><strong>"Hesabı Sil"</strong> seçeneğine dokunun.
+</div>
+
+<div class="step">
+<span class="step-number">4</span>Onay diyaloğunda <strong>kararınızı onaylayın</strong>. Hesabınız ve ilişkili tüm kişisel verileriniz sistemden silinir.
+</div>
+
+<h2>E-posta ile Silme Talebi</h2>
+<p>Uygulamaya erişiminiz yoksa veya yardım almak istiyorsanız, aşağıdaki e-posta adresine silme talebinizi gönderebilirsiniz:</p>
+
+<div class="contact-box">
+<strong>E-posta:</strong> erkanyagmur2828@gmail.com<br>
+<strong>Konu:</strong> Hesap Silme Talebi<br><br>
+İçerikte hesabınızla ilişkili e-posta adresinizi belirtmeniz, kimlik doğrulama sürecini hızlandırır.
+</div>
+
+<p>Talebiniz, KVKK'nın öngördüğü süreler içerisinde (<strong>en geç 30 gün</strong>) sonuçlandırılır.</p>
+
+<h2>Silinen Veriler</h2>
+<p>Hesabınızı sildiğinizde aşağıdaki veriler sistemden kalıcı olarak silinir veya anonimleştirilir:</p>
+<ul>
+<li>Hesap bilgileriniz (ad, e-posta, kullanıcı tercihleri)</li>
+<li>Çözüm geçmişiniz (yaptığınız testler, doğru/yanlış cevaplar)</li>
+<li>Hata defteri kayıtlarınız</li>
+<li>Hedef net bilgileri ve simülasyon tercihleri</li>
+<li>Konu bazlı ilerleme istatistikleri</li>
+<li>Aktivite tamamlama durumları</li>
+<li>Push bildirim tanımlayıcısı (cihaz token'ı)</li>
+<li>Uygulama içi tüm tercihleriniz</li>
+</ul>
+
+<h2>Saklanan Veriler ve Saklama Süresi</h2>
+<p>Yasal yükümlülükler veya teknik zorunluluklar nedeniyle aşağıdaki veriler hesap silindikten sonra da sınırlı süreyle saklanabilir:</p>
+
+<table class="table">
+<thead>
+<tr>
+<th>Veri Türü</th>
+<th>Saklama Süresi</th>
+<th>Saklama Nedeni</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Satın alma ve fatura kayıtları</td>
+<td>Vergi mevzuatı çerçevesinde (genellikle 10 yıl)</td>
+<td>Yasal yükümlülük (Vergi Usul Kanunu)</td>
+</tr>
+<tr>
+<td>Anonimleştirilmiş kullanım istatistikleri</td>
+<td>Süresiz</td>
+<td>Kişisel bağ koparılmış, kimliğe ulaşılamaz</td>
+</tr>
+<tr>
+<td>Çökme/hata raporları</td>
+<td>90 gün</td>
+<td>Teknik analiz (kişiyle bağlantısız)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Bu veriler kimliğinizle ilişkili olarak tutulmaz; istatistiksel veya yasal yükümlülük amaçlıdır.</p>
+
+<h2>Google Hesap Bağlantısı</h2>
+<p>Uygulamamız Google hesabı ile giriş (OAuth) sistemini kullanmaktadır. Hesabınızı sildiğinizde:</p>
+<ul>
+<li>Uygulamadaki kullanıcı kaydınız ve tüm verileriniz silinir.</li>
+<li>Google hesabınız etkilenmez; Google hesabınız Google'a aittir.</li>
+<li>Dilerseniz, Google hesabınızın bizim Uygulamamız ile bağlantısını ayrıca Google Hesabı ayarlarınızdan ("Google Hesabınız → Güvenlik → Üçüncü taraf erişimi") da kaldırabilirsiniz.</li>
+</ul>
+
+<h2>İletişim</h2>
+<div class="contact-box">
+Hesap ve veri silme süreciyle ilgili sorularınız için:<br><br>
+<strong>Geliştirici:</strong> Erkan Yağmur<br>
+<strong>E-posta:</strong> erkanyagmur2828@gmail.com
+</div>
+
+<div class="notice" style="margin-top: 48px;">
+Detaylı bilgi için <a href="https://erkante.github.io/privacy.html">Gizlilik Politikamızı</a> ve <a href="https://erkante.github.io/kvkk.html">KVKK Aydınlatma Metnimizi</a> inceleyebilirsiniz.
+</div>
+
+</div>
+</body>
+</html>
